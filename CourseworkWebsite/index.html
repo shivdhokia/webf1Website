@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<link rel="stylesheet" href="style.css" media="screen" title="no title">
+<meta charset="utf-8">
+<title>My Website</title>
+
+<meta name="viewport" content="width=device-width,
+Initial-scale=1.0">
+
+<body>
+
+    <header>
+        <h1>UP816736 Website</h1>
+    </header>
+
+    <ul class="navBar" id="NavBar">
+        <li><a href=index.html>Home</a></li>
+        <li><a href=litReview.html>Literature Review</a></li>
+        <li><a href=discoveryLog.html>Discovery Log</a></li>
+        <li class="icon">
+            <a href="javascript:void(0);" onclick="navFunction()">&#9776;</a>
+        </li>
+    </ul>
+
+    <p id="homeLine">
+        Welcome to my website, there isn't much on the homepage but you can check out my literature review and discovery log through the menu above.
+    </p>
+
+    <article class="container">
+      <video controls>
+      <source src="video2.mp4" type="video/mp4">
+      <source src="video2.webm" type="video/webm">
+      <source src="video2.ogg" type="video/ogg">
+      <track src="description.vtt" kind="captions" label="Captions">
+      <track src="description.vtt" kind="descriptions" label="Description">
+      Your browser does not support the video tag.
+    </video>
+
+
+        <article id="imgContainer">
+            <img src="hello.jpg" alt="Mountain View">
+            <img src="poo.jpg" alt="House with balloons attached">
+        </article>
+    </article>
+    <footer>
+        UP816736 - <a href="http://validator.w3.org/check?url=referer">Validator change pictures add discovery log</a>
+    </footer>
+
+    <script>
+        function navFunction() {
+            var x = document.getElementById("NavBar");
+            if (x.className === "navBar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navBar";
+            }
+        }
+    </script>
+</body>

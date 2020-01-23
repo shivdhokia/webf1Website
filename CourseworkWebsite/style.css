@@ -1,0 +1,174 @@
+body {
+    background-color: #FFFFFF;
+}
+
+ul.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 5px;
+}
+
+ul.navBar li {
+    float: left;
+}
+
+ul.navBar li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: Calibri;
+}
+
+ul.navBar li a:hover {
+    background-color: #555;
+}
+
+ul.navBar li.icon {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+    ul.navBar li:not(:first-child) {
+        display: none;
+    }
+    ul.navBar li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.navBar.responsive {
+        position: relative;
+    }
+    ul.navBar.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.navBar.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.navBar.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family: Calibri;
+    font-size: 50px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 20px;
+    color: #f2f2f2;
+}
+
+h2 {
+    font-family: Calibri;
+    margin-bottom: 0px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: Calibri;
+    text-decoration: underline;
+}
+
+p {
+    font-family: Calibri;
+    font-size: 15px;
+}
+
+ul {
+    font-family: Calibri;
+    font-size: 15px;
+}
+
+
+.references {
+    margin: 2px;
+    font-family: Calibri;
+    font-size: 15px;
+    list-style: none;
+
+
+}
+
+img {
+    width: 50%;
+    border: 2px solid black;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin:auto;
+    padding: 10px;
+    max-width: 80em;
+    min-width: 50;
+
+}
+
+footer {
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    font-family: Calibri;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+#referTitle {
+  text-align: center;
+  font-size: 35px;
+}
+
+#homeLine {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container {
+  margin: auto;
+  max-width: 80em;
+  min-width: 50;
+
+}
+
+#textContainer {
+  background-color:#DEDEDE;
+  padding: 20px;
+}
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap:
+}
+
+@media screen and (max-width:680px) {
+    #imgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+}
